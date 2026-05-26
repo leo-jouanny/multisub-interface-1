@@ -159,8 +159,8 @@ const BASE_MAINNET_BINDINGS: Record<string, ProtocolBinding> = {
       '0xf9cc4F0D883F1a1eb2c253bdb46c254Ca51E1F44', // RewardsController
     ],
     parsers: [
-      { protocol: '0xA238Dd80C259a72e81d7e4664a9801593F98d1c5', parser: PARSER_TBD },
-      { protocol: '0xf9cc4F0D883F1a1eb2c253bdb46c254Ca51E1F44', parser: PARSER_TBD },
+      { protocol: '0xA238Dd80C259a72e81d7e4664a9801593F98d1c5', parser: '0x297b1f0E44e318a94bd7C0f06fA7e9d1Dd594d87' },
+      { protocol: '0xf9cc4F0D883F1a1eb2c253bdb46c254Ca51E1F44', parser: '0x297b1f0E44e318a94bd7C0f06fA7e9d1Dd594d87' },
     ],
     selectors: [
       { selector: '0x617ba037', opType: OP_DEPOSIT }, // supply
@@ -173,7 +173,7 @@ const BASE_MAINNET_BINDINGS: Record<string, ProtocolBinding> = {
   },
   morpho: {
     protocols: ['0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb'],
-    parsers: [{ protocol: '0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb', parser: PARSER_TBD }],
+    parsers: [{ protocol: '0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb', parser: '0xeC2519fB177A6160E40fc9F597FB32E91C8Ce6CB' }],
     selectors: [
       { selector: '0xa99aad89', opType: OP_DEPOSIT }, // supply
       { selector: '0x5c2bea49', opType: OP_WITHDRAW }, // withdraw
@@ -190,10 +190,10 @@ const BASE_MAINNET_BINDINGS: Record<string, ProtocolBinding> = {
       '0x7C5f5A4bBd8fD63184577525326123B519429bDc', // PositionManager (V4)
     ],
     parsers: [
-      { protocol: '0x2626664c2603336E57B271c5C0b26F421741e481', parser: PARSER_TBD },
-      { protocol: '0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1', parser: PARSER_TBD },
-      { protocol: '0x6fF5693b99212Da76ad316178A184AB56D299b43', parser: PARSER_TBD },
-      { protocol: '0x7C5f5A4bBd8fD63184577525326123B519429bDc', parser: PARSER_TBD },
+      { protocol: '0x2626664c2603336E57B271c5C0b26F421741e481', parser: '0x1F0A52c5b462312a4bb76cD5fD33f981782e652D' },
+      { protocol: '0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1', parser: '0x1F0A52c5b462312a4bb76cD5fD33f981782e652D' },
+      { protocol: '0x6fF5693b99212Da76ad316178A184AB56D299b43', parser: '0x07aae0A675bC910bE9A8ABa4a235Aef548587023' },
+      { protocol: '0x7C5f5A4bBd8fD63184577525326123B519429bDc', parser: '0xE95809f6eD491A4Db1E03001e8D129dEecA5A093' },
     ],
     selectors: [
       { selector: '0x04e45aaf', opType: OP_SWAP }, // exactInputSingle (V3)
